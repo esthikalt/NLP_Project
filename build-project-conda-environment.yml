@@ -1,0 +1,23 @@
+name: build-project-conda-environment
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - torch
+      - numpy
+      - transformers
+      - datasets
+      - tiktoken
+      - tqdm
+      - wandb
+      - seaborn
+      - matplotlib
+      - peft
+      - accelerate>=0.26.0
+      - scikit-learn
+
+
